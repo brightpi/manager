@@ -15,4 +15,9 @@ public class HelloController {
             model.addAttribute("name", name);
             return "hello";
         }
+        @GetMapping("/error")
+        public  String eroor(@RequestParam(name = "error",required = false,value = "错误信息") String error,Model model){
+            model.addAttribute("error",error);
+            return  "error";
+        }
 }
