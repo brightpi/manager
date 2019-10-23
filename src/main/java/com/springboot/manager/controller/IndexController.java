@@ -15,4 +15,5 @@ public class IndexController {
             model.addAttribute("error",error);
             return  "error";
         }
+
 }
