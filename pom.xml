@@ -49,7 +49,18 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.58</version>
 		</dependency>
-    </dependencies>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.199</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>

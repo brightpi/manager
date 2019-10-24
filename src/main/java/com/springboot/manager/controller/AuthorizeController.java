@@ -42,7 +42,6 @@ public class AuthorizeController {
             request.getSession().setAttribute("user",user);
             return "redirect:/";
             //登录成功，写cookie和session
-
         }else{
             return "redirect:/";
             //登录失败，重新登录
