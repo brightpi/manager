@@ -28,7 +28,7 @@
 
 [Visual paradigm](https://www.visual-paradigm.com)
 
-##脚本
+## 脚本
 
 ```sql
 CREATE TABLE USER
