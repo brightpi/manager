@@ -52,7 +52,7 @@ public class AuthorizeController {
             user.setGmt_create(System.currentTimeMillis());
             user.setGmt_modified(user.getGmt_create());
             userMapper.insert(user);
-            request.getSession().setAttribute("user",user);
+            request .getSession().setAttribute("user",user);
             return "redirect:/";
             //登录成功，写cookie和session
         }else{
