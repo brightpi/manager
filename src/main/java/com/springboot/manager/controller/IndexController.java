@@ -18,23 +18,26 @@ public class IndexController {
         private UserMapper userMapper;
         @GetMapping("/")
         public String Index(HttpServletRequest request){
-            Cookie[] cookies = request.getCookies();
-            for (Cookie cookie:cookies){
-                if(cookie.getName().equals("token")){
-                    String token = cookie.getValue();
-                    User user = userMapper.findUserByToken(token);
-                    if(user != null){
-                        request.getSession().setAttribute("user",user);
-                        break;
-                    }else {
 
+            Cookie[] cookies = request.getCookies();
+            if (cookies!=null) {
+                for (Cookie cookie : cookies) {
+                    if (cookie.getName().equals("token")) {
+                        String token = cookie.getValue();
+                        User user = userMapper.findUserByToken(token);
+                        if (user != null) {
+                            request.getSession().setAttribute("user", user);
+                            break;
+                        } else {
+
+                        }
                     }
                 }
             }
             return "Index";
         }
         @GetMapping("/error")
-        public  String eroor(@RequestParam(name = "error",required = false) String error,Model model){
+        public  String error(@RequestParam(name = "error",required = false) String error,Model model){
             model.addAttribute("error",error);
             return  "error";
         }
