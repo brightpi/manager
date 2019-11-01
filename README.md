@@ -28,6 +28,8 @@
 
 [Visual paradigm](https://www.visual-paradigm.com)
 
+[lombok](https://projectlombok.org/)
+
 ## 脚本
 
 ```sql

@@ -1,0 +1,24 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.main {
+    background-color: white;
+    margin: 50px;
+}
+
+.btn-publish {
+    float: right;
+    margin-bottom: 15px;
+}
+
+.a-publish {
+    display: inline;
+    text-align: center;
+}
+
+.text-desc {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
