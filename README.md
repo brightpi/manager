@@ -22,6 +22,8 @@
 
 [Spring](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)
 
+[thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#support-for-html5-friendly-attribute-and-element-names)
+
 ## 工具
 
 [Git](https://git-scm.com/download)

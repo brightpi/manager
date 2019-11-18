@@ -22,3 +22,8 @@ body {
     font-weight: normal;
     color: #999;
 }
+
+.img-size {
+    width: 45px;
+    height: 40px;
+}
